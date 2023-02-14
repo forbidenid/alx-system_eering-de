@@ -1,0 +1,14 @@
+#!/bin/bash
+
+declare -A word_count
+
+while read word; do
+  word_count["$word"]=$((word_count["$word"] + 1))
+done
+
+for word in "${!word_count[@]}"; do
+  if [[ ${word_count[$word]} -eq 1 ]]; then
+    echo $word
+  fi
+done | sort
+#why?

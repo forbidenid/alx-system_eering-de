@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "First 10 lines of /etc/passwd:"
+head -10 /etc/passwd
+#why?
+

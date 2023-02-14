@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Count the number of directories in the current directory, excluding the current and parent directories
+dir_count=$(find . -type d -not -path "." -not -path "./.." -not -path "./*" | wc -l)
+
+# Print the number of directories
+echo "Number of directories: $dir_count"
+#why?

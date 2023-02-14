@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Third line of iacta:"
+line_number=1
+while read line; do
+  if [ $line_number -eq 3 ]; then
+    echo "$line"
+    break
+  fi
+  ((line_number++))
+done < iacta
+#why?/

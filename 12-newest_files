@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Get a list of the 10 newest files in the current directory
+# sort the list by modification time in reverse order
+# and display each file on a separate line
+ls -lt | head -n 11 | tail -n 10
+#why?

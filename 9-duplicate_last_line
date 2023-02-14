@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Check if the file 'iacta' exists
+if [ ! -f "iacta" ]; then
+  echo "Error: the file 'iacta' does not exist."
+  exit 1
+fi
+
+# Get the last line of the file 'iacta'
+last_line=$(tail -1 iacta)
+
+# Append the last line to the end of the file 'iacta'
+echo "$last_line" >> iacta
+#why?

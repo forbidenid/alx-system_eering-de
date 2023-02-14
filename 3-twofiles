@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "contents of /etc/passwd"
+cat /etc/passwd
+echo "content of /etc/hosts"
+cat /etc/passwd
+#why?
+

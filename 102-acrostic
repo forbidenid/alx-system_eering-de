@@ -1,0 +1,4 @@
+#!/bin/bash
+cat acrostic.txt | awk '{print substr($0,1,1)}' | tr -d '\n'
+#why?
+
